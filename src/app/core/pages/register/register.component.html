@@ -1,0 +1,28 @@
+<div class="register">
+  <h2>Sign in</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <div class="mb-3">
+      <input type="text" class="w-full main-input" toggleMask placeholder="Username" pInputText formControlName="username" />
+    </div>
+    <div class="mb-3">
+      <input type="text" class="w-full main-input" toggleMask placeholder="First Name" pInputText formControlName="firstName" />
+    </div>
+    <div class="mb-3">
+      <input type="text" class="w-full main-input" toggleMask placeholder="Last Name" pInputText formControlName="lastName" />
+    </div>
+    <div class="mb-3">
+      <input type="text" class="w-full main-input" toggleMask placeholder="Email" pInputText formControlName="email" />
+    </div>
+    <div class="mb-3">
+      <p-password class="main-input" [toggleMask]="true" placeholder="Password" formControlName="password" />
+    </div>
+    <div class="mb-3">
+      <p-password class="main-input" [toggleMask]="true" placeholder="Confirm Password" formControlName="rePassword" />
+    </div>
+    <div class="mb-3">
+      <input type="text" class="w-full main-input"  placeholder="Phone" pInputText formControlName="phone" />
+    </div>
+    <p>Already have an account? <a href="#" class="recover-pass">Login</a></p>
+    <app-main-auth-btn text="Sign up" />
+  </form>
+</div>

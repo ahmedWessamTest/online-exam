@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --main-color:#4461F2;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color:inherit
+}
+.container {
+  padding: 0 15px;
+  margin: auto
+}
+@media screen and (width > 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media screen and (width > 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (width > 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (width > 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media screen and (width > 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+// slider
+.p-dropdown {
+  border: none;
+}
+.p-dropdown-label {
+  padding-right: 0 !important;
+}
+.main-input {
+  box-shadow: 0px 10px 20px 0px #4461F20D;
+  border-radius: 10px;
+  width: 100%;
+}
+.p-password {
+  width: 100%;
+  .p-inputtext.p-component.p-element.p-password-input {
+    width: 100%;
+  }
+}

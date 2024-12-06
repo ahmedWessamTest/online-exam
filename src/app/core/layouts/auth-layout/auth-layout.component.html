@@ -1,0 +1,32 @@
+<div class="grid justify-content-center">
+  <div class="md:col-6">
+    <div class="auth-ui py-5 hidden md:block">
+      <span>Welcome to</span>
+      <h1>Elevate</h1>
+      <p>Quidem autem voluptatibus qui quaerat aspernatur architecto natus</p>
+      <div class="auth-img">
+        <img src="./assets/auth-image-cover.svg" alt="auth image" />
+      </div>
+    </div>
+  </div>
+  <div class="md:col-6">
+    <div class="auth-comp py-5">
+        <div class="auth-nav align-self-start flex gap-4 align-items-center justify-content-end">
+          <p-dropdown
+            [options]="languages"
+            [(ngModel)] = "selectedLang"
+            optionLabel="name"
+            optionValue="code"
+            placeholder="English"
+          />
+          <a routerLink="/auth/login" class="btn-signin">Sign in</a>
+          <a routerLink="/auth/register" class="btn-reg">
+            Register
+          </a>
+        </div>
+        <div class="flex justify-content-center pt-8">
+          <router-outlet />
+        </div>
+    </div>
+  </div>
+</div>

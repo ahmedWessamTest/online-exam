@@ -1,0 +1,33 @@
+.auth-ui {
+  background-color: #F0F4FC;
+  border-end-end-radius: 100px;
+  border-start-end-radius: 100px;
+  span ,h1{
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 4.6875rem;
+  }
+  h1 {
+    color: #122D9C;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+  .auth-img {
+    width: 60%;
+  }
+}
+.auth-comp {
+  .btn-signin {
+    color: #4461F2;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .btn-reg {
+    border: 1px solid #E0E0E9;
+    border-radius: 15px;
+    color: #4461F2;
+    padding: 10px 15px;
+    box-shadow: 0px 10px 30px 0px #4461F20D;
+  }
+}

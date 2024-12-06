@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://exam.elevateegy.com",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
